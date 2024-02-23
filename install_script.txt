@@ -3442,6 +3442,7 @@ choco install gwyddion -y
 choco install gyazo -y
 choco install gzdoom -y
 choco install gzip -y
+
 choco install h-opc-cli -y
 choco install h2database -y
 choco install h2testw -y
@@ -3663,6 +3664,7 @@ choco install hyperfine -y
 choco install hyperspace -y
 choco install hyperspace-desktop -y
 choco install hyperx-ngenuity -y
+
 choco install ihateregions -y
 choco install i2p -y
 choco install i2pd -y
@@ -3917,6 +3919,7 @@ choco install ivpn -y
 choco install ivy -y
 choco install izarc -y
 choco install izpack -y
+
 choco install j-kinopoisk2imdb -y
 choco install jabra-direct -y
 choco install jabref -y
@@ -4082,6 +4085,7 @@ choco install jwpce -y
 choco install jwtinfo -y
 choco install jwtdecode -y
 choco install jxplorer -y
+
 choco install k-litecodecpackbasic -y
 choco install k-litecodecpackfull -y
 choco install k-litecodecpackmega -y
@@ -4319,6 +4323,7 @@ choco install kvirc -y
 choco install kyma-cli -y
 choco install kyverno-cli -y
 choco install kzip -y
+
 choco install labplot -y
 choco install lacework-cli -y
 choco install lacey.portable -y
@@ -4648,6 +4653,7 @@ choco install lzip7z -y
 choco install love -y
 choco install love.install -y
 choco install love.portable -y
+
 choco install mac-precision-touchpad -y
 choco install macaddressview -y
 choco install macaroni -y
@@ -5513,6 +5519,7 @@ choco install myuninst -y
 choco install solarwinds-advanced-monitoring-agent -y
 choco install solarwinds-recovery-console -y
 choco install solarwinds-take-control-viewer -y
+
 choco install nagstamon -y
 choco install nagstamon.install -y
 choco install nagstamon.portable -y
@@ -5918,6 +5925,7 @@ choco install nsolid-erbium -y
 choco install nsolid-fermium -y
 choco install nsolid-gallium -y
 choco install regeditor -y
+
 choco install oak9cli -y
 choco install oatmeal -y
 choco install ober.portable -y
@@ -6176,6 +6184,7 @@ choco install oxygenmono -y
 choco install ozcode -y
 choco install ozcode-vs2017 -y
 choco install ozcode-vs2022 -y
+
 choco install p4 -y
 choco install p4d -y
 choco install p4merge -y
@@ -6815,6 +6824,7 @@ choco install pytivo-wmcbrine -y
 choco install pyzo -y
 choco install pyzo.install -y
 choco install pyzo.portable -y
+
 choco install qdir -y
 choco install q10.portable -y
 choco install qaac -y
@@ -6935,6 +6945,7 @@ choco install qv2ray.portable -y
 choco install qview -y
 choco install qview.install -y
 choco install qview.portable -y
+
 choco install r.studio -y
 choco install r128gain -y
 choco install rabbitmq -y
@@ -7313,6 +7324,7 @@ choco install rweverything.portable -y
 choco install ryujinx -y
 choco install rode-central -y
 choco install rode-connect -y
+
 choco install s2 -y
 choco install s3browser -y
 choco install s3put -y
@@ -8224,6 +8236,7 @@ choco install systemninja.install -y
 choco install systemninja.portable -y
 choco install systraymeter -y
 choco install systemtraymenu -y
+
 choco install t-clock -y
 choco install t-rex -y
 choco install tsqlflex -y
@@ -8727,6 +8740,7 @@ choco install typescript.vs -y
 choco install typescript.vs2013 -y
 choco install typora -y
 choco install typst -y
+
 choco install uadevelopers.utils -y
 choco install ubiquiti-unifi-controller -y
 choco install ubisoft-connect -y
@@ -8895,6 +8909,7 @@ choco install utorrent-easy-client-chrome -y
 choco install utorrent-link-sender-chrome -y
 choco install utsu -y
 choco install uvtools -y
+
 choco install v2ray -y
 choco install v2rayn -y
 choco install vacuum-im -y
