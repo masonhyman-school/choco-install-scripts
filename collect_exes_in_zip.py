@@ -8,6 +8,7 @@ def get_executables(directory):
         for file in files:
             if file.endswith(".exe"):
                 executables.append(os.path.join(root, file))
+    print('Found: ' + str(len(executables) + ' exe files.'))
     return executables
 
 def compute_hash(file_path):
@@ -21,6 +22,7 @@ def compute_hash(file_path):
     return hasher.hexdigest()
 
 def copy_to_zip(executables):
+    print('Zipping exe files, duplicates expected.')
     with zipfile.ZipFile("executables.zip", "w") as zip_file:
         for exe in executables:
             hash_value = compute_hash(exe)
