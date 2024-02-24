@@ -24,9 +24,9 @@ def compute_hash(file_path):
         print('Could not open ' + file_path + '. Moving on.')
     return hasher.hexdigest()
 
-def copy_to_zip(executables):
+def copy_to_zip(executables, output_file):
     print('Zipping exe files, duplicates expected.')
-    with zipfile.ZipFile("executables.zip", "w") as zip_file:
+    with zipfile.ZipFile(output_file, "w") as zip_file:
         for exe in executables:
             hash_value = compute_hash(exe)
             try:
@@ -35,10 +35,11 @@ def copy_to_zip(executables):
                 continue
 
 if __name__ == "__main__":
-    directory = "C:\\Program Files"  # Change this to the directory you want to search for executables
+    directory = input("Enter directory to search for exe files in (most likely C:\): ")  # Change this to the directory you want to search for executables
+    output_file = input("Enter the location where the zip file containing the exe files should be written to: ")
     executables = get_executables(directory)
     if executables:
-        copy_to_zip(executables)
+        copy_to_zip(executables, output_file)
         print("Executable files copied to executables.zip")
     else:
         print("No executable files found.")
