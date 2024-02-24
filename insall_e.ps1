@@ -6,9 +6,6 @@ choco install earth-alerts -y
 choco install earthview-chrome -y
 choco install earthly -y
 choco install eartrumpet -y
-choco install partitionmasterfree -y
-choco install todobackup -y
-choco install pctransfree -y
 choco install eask-cli -y
 choco install easy7zip -y
 choco install ecm -y
