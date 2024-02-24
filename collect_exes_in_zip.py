@@ -13,12 +13,15 @@ def get_executables(directory):
 
 def compute_hash(file_path):
     hasher = hashlib.sha256()
-    with open(file_path, "rb") as f:
-        while True:
-            data = f.read(65536)  # 64 KB buffer
-            if not data:
-                break
-            hasher.update(data)
+    try:
+        with open(file_path, "rb") as f:
+            while True:
+                data = f.read(65536)  # 64 KB buffer
+                if not data:
+                    break
+                hasher.update(data)
+    except IOError:
+        print('Could not open ' + file_path + '. Moving on.')
     return hasher.hexdigest()
 
 def copy_to_zip(executables):
