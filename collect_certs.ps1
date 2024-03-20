@@ -17,9 +17,9 @@ if (-not (Test-Path $OutputDirectory -PathType Container)) {
 
 # Iterate through files in source directory
 foreach ($file in Get-ChildItem -Path $SourceDirectory -Filter *.exe) {
-    $cert = Get-PfxCertificate -FilePath $file.FullName -NoPrompt
-    if ($cert) {
-        $certPem = $cert.Export([System.Security.Cryptography.X509Certificates.X509ContentType]::Cert)
+    $signature = Get-AuthenticodeSignature -FilePath $file.FullName
+    if ($signature) {
+        $certPem = $signature.SignerCertificate.Export([System.Security.Cryptography.X509Certificates.X509ContentType]::Cert)
         $certPemPath = Join-Path -Path $OutputDirectory -ChildPath ($file.BaseName + ".pem")
         Set-Content -Path $certPemPath -Value $certPem -Encoding UTF8
         Write-Host "Certificate extracted from $($file.Name) and saved as $($certPemPath)"
