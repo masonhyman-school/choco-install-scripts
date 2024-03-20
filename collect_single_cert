@@ -1,0 +1,14 @@
+# Path to the executable file
+$exeFilePath = "C:\Path\To\Your\File.exe"
+
+# Load the .NET assembly for working with certificates
+Add-Type -AssemblyName System.Security
+
+# Get the code signing certificate from the executable
+$cert = Get-AuthenticodeSignature -FilePath $exeFilePath | Select-Object -ExpandProperty SignerCertificate
+
+# Export the certificate to a PEM file
+$certBytes = $cert.Export([System.Security.Cryptography.X509Certificates.X509ContentType]::Cert)
+[System.IO.File]::WriteAllBytes("C:\Path\To\Your\OutputFile.pem", $certBytes)
+
+Write-Host "Certificate extracted and exported to PEM file successfully."
